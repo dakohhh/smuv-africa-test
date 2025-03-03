@@ -18,6 +18,7 @@ export class FlashSaleService {
       endTime: Joi.date().min(Joi.ref("startTime")).optional().messages({
         "date.min": "End time must be after start time",
       }),
+      quantityPerTransaction: Joi.number().optional().default(null),
     })
       .options({ stripUnknown: true })
       .validate(body);
