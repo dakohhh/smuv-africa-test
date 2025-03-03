@@ -1,6 +1,6 @@
-import { Request } from 'express';
-import { IUser } from './user';
+import { Request } from "express";
+import { IUser } from "./user";
 
 export interface AuthRequest extends Request {
-    user?: IUser;
+  user?: IUser;
 }

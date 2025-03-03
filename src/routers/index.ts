@@ -1,18 +1,19 @@
-import express from 'express';
-import authentication from './authentication';
-import upload from './upload';
-import user from './user';
-import roles from './roles';
-import permission from './permission';
-
+import user from "./user";
+import express from "express";
+import product from "./product";
+import authentication from "./authentication";
+import flashSale from "./flash_sale";
+import purchase from "./purchase";
+import leaderboard from "./leaderboard";
 const router = express.Router();
 
 export default (): express.Router => {
-    authentication(router);
-    permission(router);
-    roles(router);
-    user(router);
-    upload(router);
+  user(router);
+  product(router);
+  flashSale(router);
+  purchase(router);
+  leaderboard(router);
+  authentication(router);
 
-    return router;
+  return router;
 };

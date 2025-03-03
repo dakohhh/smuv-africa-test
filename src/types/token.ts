@@ -1,21 +1,21 @@
-import { IUser } from './user';
+import { IUser } from "./user";
 
 export interface IRefreshToken {
-    user: IUser;
+  user: IUser;
 
-    token: string;
+  token: string;
 
-    expires_at: Date;
+  expires_at: Date;
 }
 
 export interface IVerificationToken {
-    user: IUser;
+  user: IUser;
 
-    otp?: string;
+  otp?: string;
 
-    token?: string;
+  token?: string;
 
-    type: string;
+  type: string;
 
-    expires_at: Date;
+  expires_at: Date;
 }

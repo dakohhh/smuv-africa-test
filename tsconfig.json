@@ -22,7 +22,10 @@
     "forceConsistentCasingInFileNames": true,
     /* Type Checking */
     "strict": true,                                      
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    /* Decorators */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": ["src/**/*", "src/**/*.tsx"],
 
